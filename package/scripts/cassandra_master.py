@@ -52,8 +52,8 @@ class Cassandra_Master(Script):
     def status(self, env):
         import params
         env.set_params(params)
-        status_cmd = format("service cassandra status")
-        Execute(status_cmd)
+        controller_pid = "/var/run/cassandra/cassandra.pid"
+        check_process_status(controller_pid)
         print 'Status of the Master'
     
 if __name__ == "__main__":
