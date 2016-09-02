@@ -25,7 +25,7 @@ cassandra_bin = '/usr/sbin/cassandra'
 cassandra_pid_dir = config['configurations']['cassandra-env']['cassandra_pid_dir']
 cassandra_pid_file = format("{cassandra_pid_dir}/cassandra.pid")
 
-conf_dir = "/etc/cassandra/conf"
+conf_dir = "/etc/cassandra"
 cassandra_user = config['configurations']['cassandra-env']['cassandra_user']
 log_dir = config['configurations']['cassandra-env']['cassandra_log_dir']
 pid_dir = '/var/run/cassandra'
