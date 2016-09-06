@@ -223,11 +223,11 @@
 		<value>9160</value>
 		<description></description>
 	</property>
-	<property>
+	<!--<property>
 		<name>broadcast_rpc_address</name>
 		<value>1.2.3.4</value>
 		<description></description>
-	</property>
+	</property>-->
 	<property>
 		<name>rpc_keepalive</name>
 		<value>true</value>
