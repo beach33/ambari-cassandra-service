@@ -74,8 +74,10 @@ storage_port=config['configurations']['cassandra-site']['storage_port']
 ssl_storage_port=config['configurations']['cassandra-site']['ssl_storage_port']
 
 # a,listen_address1=commands.getstatusoutput('hostname -i')
-listen_address=config['configurations']['cassandra-site']['listen_address1']
+#listen_address=config['configurations']['cassandra-site']['listen_address1']
 #listen_address=commands.getstatusoutput("hostname -i | awk '{print $NF}'")
+# Use emtpy listen address but the host's broadcast_rpc_address
+listen_address=''
 start_native_transport=config['configurations']['cassandra-site']['start_native_transport']
 native_transport_port=config['configurations']['cassandra-site']['native_transport_port']
 start_rpc=config['configurations']['cassandra-site']['start_rpc']
