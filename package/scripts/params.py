@@ -82,7 +82,8 @@ start_rpc=config['configurations']['cassandra-site']['start_rpc']
 
 rpc_address=config['configurations']['cassandra-site']['rpc_address1']
 rpc_port=config['configurations']['cassandra-site']['rpc_port']
-broadcast_rpc_address=config['configurations']['cassandra-site']['broadcast_rpc_address']
+#broadcast_rpc_address=config['configurations']['cassandra-site']['broadcast_rpc_address']
+a,broadcast_rpc_address=commands.getstatusoutput("hostname -i | awk '{print $NF}'")
 rpc_keepalive=config['configurations']['cassandra-site']['rpc_keepalive']
 rpc_server_type=config['configurations']['cassandra-site']['rpc_server_type']
 thrift_framed_transport_size_in_mb=config['configurations']['cassandra-site']['thrift_framed_transport_size_in_mb']
